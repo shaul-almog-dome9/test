@@ -21,3 +21,5 @@ jobs:
           git pull
           git merge --no-ff master -m "Auto-merge master back to develop"
           git push
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
